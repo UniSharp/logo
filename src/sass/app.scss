@@ -1,0 +1,76 @@
+@import "node_modules/normalize-scss/sass/normalize/import-now";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial;
+}
+
+h1 {
+  letter-spacing: 4px;
+  font-size: 46px;
+}
+
+.container {
+  padding: 10px 30px;
+}
+
+.logo {
+  width: 450px;
+  height: 300px;
+  background-color: black;
+  padding-left: 28px;
+  padding-top: 34px;
+}
+
+.wrapper {
+  position: relative;
+  transform: skewX(-2deg);
+}
+
+.u {
+  height: 100px;
+  border-width: 0 50px;
+  position: relative;
+
+  &, &:before {
+    width: 165px;
+    border-style: solid;
+    border-color: white;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    border-width: 50px;
+    border-top-width: 0;
+    left: -50px;
+    bottom: -99px;
+    border-radius: 0 0 100px 100px;
+  }
+
+  &.left {
+    transform: rotate(45deg);
+    left: 50px;
+    top: 50px;
+  }
+
+  &.right {
+    transform: rotate(-135deg);
+    left: 183px;
+    top: -20px;
+  }
+}
+
+.bar {
+  width: 50px;
+  height: 90px;
+  background-color: white;
+  transform: rotate(90deg) skewX(10deg);
+  position: absolute;
+  top: -50px;
+  left: -30px;
+}
