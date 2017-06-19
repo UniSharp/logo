@@ -1,3 +1,3 @@
 # UniSharp LOGO in Pure CSS
 
-![UniSharp LOGO](https://i.imgur.com/aOpeo0i.png)
+![UniSharp LOGO](https://i.imgur.com/RAn2y2j.png)
